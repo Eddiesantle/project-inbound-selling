@@ -36,3 +36,5 @@ Desenvolvimento de um sistema de vendas de ingressos
 <img src="assets/diagrama-arquitetura-sistem.jpg">
 
 <img src="assets/diagrama-operacao.jpg"> 
+
+<img src="assets/multi-apps-nestjs.jpg">

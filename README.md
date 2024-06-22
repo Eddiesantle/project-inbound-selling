@@ -1,5 +1,7 @@
 # PROJETO: Sistema de vendas de ingressos
 
+https://github.com/devfullcycle/imersao18/tree/main
+
 ## Descrição do projeto
 Desenvolvimento de um sistema de vendas de ingressos
 - Gerenciamento de evento/ Processamento de reservas
@@ -33,8 +35,12 @@ Desenvolvimento de um sistema de vendas de ingressos
 - 20/06: Fontend - Next.js
 - 21/06: Integração de todos os sistemas
 
+
+
 <img src="assets/diagrama-arquitetura-sistem.jpg">
 
 <img src="assets/diagrama-operacao.jpg"> 
 
 <img src="assets/multi-apps-nestjs.jpg">
+
+<img src="assets/gerenciamento-api.jpg">

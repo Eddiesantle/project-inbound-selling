@@ -71,7 +71,13 @@ Para iniciar os containers definidos:
 docker compose up
 ```
 
-### Executar API Gateway com Kong
+### Acessar API Gateway com Kong
+
+- Acesse o Kong através de:
+    http://localhost:8002
+
+
+### Executar Backend Golang
 Acesse o container do Golang para iniciar a aplicação backend:
 ```bash
 docker compose exec golang sh
@@ -81,6 +87,20 @@ Execute o servidor Golang na porta 8080:
 ```bash
 go run cmd/events/main.go
 ```
+
+### Executar Frontend com NextJS
+Acesse o container do NextJS:
+```bash
+docker compose exec web-nextjs bash
+```
+
+Inicie a aplicação:
+```bash
+npm run dev
+```
+
+Acessar: 
+http://host.docker.internal:3002/nextjs
 
 ### Executar Aplicação com NestJS
 Acesse o container do NestJS:
@@ -111,27 +131,12 @@ npm run start start:partner1
 npm run start start:partner2
 ```
 
-### Executar Frontend com NextJS
-Acesse o container do NextJS:
-```bash
-docker compose exec nextjs bash
-```
 
-Instale as dependências necessárias:
-```bash
-npm install
-```
-
-Inicie a aplicação:
-```bash
-npm run dev
-```
 
 #### Acessar o Frontend
 
 - Acesse o frontend através dos seguintes endereços:
-    http://localhost:3002/nextjs 
-    http://localhost:8000/nextjs -> KONG
+    http://host.docker.internal:3002/nextjs
 
 ### Acessar Kong
 - Acesse o Kong através de:

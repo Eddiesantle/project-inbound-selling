@@ -116,21 +116,26 @@ npm install
 Inicie o banco de dados e as migrações:
 ```bash
 npm run migrate:partner1
-npm run migrate:partner2
+npm run migrate:partner2 (em desenvolvimento)
 ```
 
 Inicie os serviços para parceiros:
 ```bash
 npm run start partner1-fixture
-npm run start partner2-fixture
+npm run start partner2-fixture (em desenvolvimento)
 ```
 
 Inicie os serviços:
 ```bash
 npm run start start:partner1
-npm run start start:partner2
+npm run start start:partner2 (em desenvolvimento)
 ```
 
+
+### Debugar funcionalidade de realizar pagamento
+
+Fluxo Realizar compra/Reserva - Etapas validadas:
+- Realiza a compra(NEXTJS) -> Efetua direcionamento para partner1(GOLANG) -> Partner1 recebe requisição da reserva(NESTJS) -x Processar registrar reserva(NEXTJS)
 
 
 #### Acessar o Frontend
@@ -143,3 +148,4 @@ npm run start start:partner2
     http://localhost:8002
 
 Este projeto foi desenvolvido com foco em escalabilidade, manutenibilidade e integração eficiente com sistemas parceiros, utilizando tecnologias modernas e seguindo boas práticas de desenvolvimento.
+
